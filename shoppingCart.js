@@ -13,3 +13,12 @@ export {totalQuantity,appName};
 export default function(name,quantity){
 console.log(`Your order of ${name} with quantity of ${quantity} sucessfully placed`);
 }
+let todo=async function(){
+    let response=await fetch(`https://jsonplaceholder.typicode.com/todos`);
+    let data=await response.json();
+    return data;
+}
+console.log(`start fetching of data`);
+let todoList=await todo();
+console.log(todoList);
+console.log(`Data fetching completed`);

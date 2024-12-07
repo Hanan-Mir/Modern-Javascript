@@ -1,0 +1,24 @@
+{
+  "name": "modernjs",
+  "version": "1.0.0",
+  "main": "clean.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanan-Mir/Modern-Javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hanan-Mir/Modern-Javascript/issues"
+  },
+  "homepage": "https://github.com/Hanan-Mir/Modern-Javascript#readme",
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lodash-es": "^4.17.21"
+  },
+  "description": "",
+
+}
