@@ -1,9 +1,10 @@
 {
   "name": "modernjs",
   "version": "1.0.0",
-  "main": "clean.js",
+  "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -16,9 +17,14 @@
   },
   "homepage": "https://github.com/Hanan-Mir/Modern-Javascript#readme",
   "dependencies": {
+    "core-js": "^3.39.0",
     "leaflet": "^1.9.4",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "lts": "^2.0.0",
+    "regenerator-runtime": "^0.14.1"
   },
-  "description": "",
-
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  },
+  "description": ""
 }

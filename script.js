@@ -1,6 +1,6 @@
 //importing module
 // import  './shoppingCart.js';
-// import { cartValue,cart } from './shoppingCart.js';
+ import { cartValue,cart } from './shoppingCart.js';
 // import { addToCart } from './shoppingCart.js';
 // import { totalQuantity as TQ ,appName as app } from './shoppingCart.js';
 // console.log(cartValue);
@@ -31,8 +31,8 @@ console.log(lastComment);
 //to get data form the pomise
 // lastComment.then(lastPost=>console.log(lastPost));
 //-------------more better way--------------
-let lastComment2=await getComment();
-console.log(lastComment2);
+// let lastComment2=await getComment();
+// console.log(lastComment2);
 //--------older way of using modules
 // let getData=function(){
 //     let orderName=99;
@@ -77,6 +77,31 @@ let newData=Object.assign({},shopingData);
 shopingData.loggedIn=false;
 console.log(newData);
 //using lodash to copy
-import clonedeep from './node_modules/lodash-es/cloneDeep.js'
+import clonedeep from '/node_modules/lodash-es/cloneDeep.js'
 let newData2=clonedeep(shopingData);
 console.log(newData2);
+if(module.hot){
+    module.hot.accept();
+}
+class Person{
+    greeting="Hello";
+    constructor(name){
+        this.name=name;
+        console.log(`${this.greeting, this.name}`);
+    }
+}
+let hanan=new Person("hanan");
+console.log('hanan'?? false);
+console.log(cart);
+cart.filter(el=>console.log(el));
+
+
+import 'core-js/stable';
+//for polyfilling
+import 'regenerator-runtime/runtime.js'
+
+
+
+
+
+

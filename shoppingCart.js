@@ -19,6 +19,6 @@ let todo=async function(){
     return data;
 }
 console.log(`start fetching of data`);
-let todoList=await todo();
-console.log(todoList);
+// let todoList=await todo();
+// console.log(todoList);
 console.log(`Data fetching completed`);
